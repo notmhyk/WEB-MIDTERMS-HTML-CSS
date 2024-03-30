@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 100%;
+    height: 23vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: -20vh;
+    left: 0;
+    z-index: 999;
+    transition: top 0.3s;
+}
+
+.menu:hover {
+    top: 0; 
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: -80px;
+}
+
+.menu ul li {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+}
+
+.menu ul li:last-child {
+    margin-right: 10px;
+    padding-right: 40px;
+}
+.menu p {
+    text-align: center;
+    text-decoration: black;
+    font-weight: bold;
+}
+
+.image {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+/* <------- First-Section-Ni-Pau -------> */
+.first-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+/* <------- Second-Section-Ni-Pau -------> */
+.second-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #DD9F3A;
+}
+
+/* <------- Third-Section-Ni-Pau -------> */
+.third-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+/* <------- Fourth-Section-Ni-Pau -------> */
+.fourth-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #DD9F3A;
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: red
+}
