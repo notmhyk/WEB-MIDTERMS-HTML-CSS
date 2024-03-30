@@ -2,23 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-    display: flexbox;
-    flex-wrap: wrap;
+    
 }
 
 .menu {
     width: 100%;
-    height: 23vh;
+    height: 11vh;
     background-color: #ffffff;
-    position: fixed;
-    top: -20vh;
+    top: 0;
     left: 0;
-    z-index: 999;
-    transition: top 0.3s;
-}
-
-.menu:hover {
-    top: 0; 
 }
 
 .menu ul {
@@ -26,31 +18,38 @@ body {
     margin: 0;
     padding: 0;
     float: right;
-    margin-top: -80px;
+    margin-top: -60px;
 }
-
 .menu ul li {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     display: inline-block;
+}
+.menu ul li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     color: black;
     font-weight: 400;
+    font-size: large;
 }
 
-.menu ul li:last-child {
+.menu ul li a:last-child {
     margin-right: 10px;
     padding-right: 40px;
 }
-.menu p {
-    text-align: center;
-    text-decoration: black;
-    font-weight: bold;
-}
 
 .image {
+    display: block;
     text-align: left;
-    padding-left: 30px;
+    max-height: 100%;
+    padding-left: 60px;
     padding-top: 15px;
+}
+
+.image img {
+    width: 150px;
+    height: 75px;
 }
 
 /* <------- First-Section-Ni-Pau -------> */
@@ -58,7 +57,59 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #FFFFFF;
+   
 }
+
+.image-family-wrapper {
+    position: absolute;
+    max-width: 48rem;
+    margin: 0 23.3rem 0 40rem;
+    width: 37rem;
+    margin-top: 5rem;
+}
+
+.image-family-slider {
+    display: flex;
+    width: 37rem;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    
+}
+
+.image-family-slider img{
+    flex: 1 0 100%;
+    /* scroll-snap-align: start; */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.image-family-slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.image-family-slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.image-family-slider-nav:hover {
+    opacity: 1;
+}
+
 
 /* <------- Second-Section-Ni-Pau -------> */
 .second-section {
