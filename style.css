@@ -120,7 +120,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 1rem 4rem;
-    margin-left: 20rem;
+    margin-left: 1rem;
     background-color: #DD9F3A;
     border-radius: 50px;
 }
@@ -130,17 +130,197 @@ nav ul li a {
 
 #second-section {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: #DD9f3A;
     padding: 2rem;
-    
 }
-
+.services-menu {
+    position: relative;
+}
 
 .services-menu h1 {
     text-align: center;
     font-size: 400%;
+    
 }
+
+.mbps-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.first-mbps-menu {
+    padding: 1rem 1rem 5rem 1rem;
+    display: block;
+    border-radius: 12px;
+    margin: 2rem 60rem 0 0;
+    background-color: #fff;
+}
+
+.first-mbps-menu .unli-plan-price {
+    position: relative;
+    border: 2px solid #DD9F3A;
+    border-radius: 8px;
+    margin: 0.05rem 5rem 1rem 0;
+    width: 15rem;
+    text-align: center;
+}
+
+.first-mbps-menu .landline-container {
+    position: relative;
+    border: 2px solid #B0A695;
+    background-color: #B0A695;
+    border-radius: 12px;
+    padding: 0 3rem 1rem 1rem;
+    width: 10rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.first-mbps-menu .landline-container p {
+    width: 9rem;
+    font-size: 80%;
+    color: white;
+}
+
+.first-mbps-menu .landline-container img {
+    position: relative;
+    width: 50%;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.first-mbps-menu .plan-description {
+    font-size: 80%;
+}
+
+.first-mbps-menu .apply-btn {
+    position: absolute;
+    margin: 1rem 0 1rem 7rem;
+    width: 6rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    background-color: #DD9F3A;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.second-mbps-menu {
+    padding: 1rem 1rem 5rem 1rem;
+    display: block;
+    border-radius: 12px;
+    margin: -27.5rem 60rem 0 26rem;
+    background-color: #fff;
+    
+}
+
+.second-mbps-menu .unli-plan-price {
+    position: relative;
+    border: 2px solid #DD9F3A;
+    border-radius: 8px;
+    margin: 0.05rem 5rem 1rem 0;
+    width: 15rem;
+    text-align: center;
+}
+
+.second-mbps-menu .landline-container {
+    position: relative;
+    border: 2px solid #B0A695;
+    background-color: #B0A695;
+    border-radius: 12px;
+    padding: 0 3rem 1rem 1rem;
+    width: 10rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.second-mbps-menu .landline-container p {
+    width: 9rem;
+    font-size: 80%;
+    color: white;
+}
+
+.second-mbps-menu .landline-container img {
+    position: relative;
+    width: 50%;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.second-mbps-menu .plan-description {
+    font-size: 80%;
+}
+
+.second-mbps-menu .apply-btn {
+    position: absolute;
+    margin: 1rem 0 1rem 7rem;
+    width: 6rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    background-color: #DD9F3A;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.third-mbps-menu {
+    padding: 1rem 1rem 5rem 1rem;
+    display: block;
+    border-radius: 12px;
+    margin: -27.5rem 60rem 0 52rem;
+    background-color: #fff;
+}
+
+.third-mbps-menu .unli-plan-price {
+    position: relative;
+    border: 2px solid #DD9F3A;
+    border-radius: 8px;
+    margin: 0.05rem 5rem 1rem 0;
+    width: 15rem;
+    text-align: center;
+}
+
+.third-mbps-menu .landline-container {
+    position: relative;
+    border: 2px solid #B0A695;
+    background-color: #B0A695;
+    border-radius: 12px;
+    padding: 0 3rem 1rem 1rem;
+    width: 10rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.third-mbps-menu .landline-container p {
+    width: 9rem;
+    font-size: 80%;
+    color: white;
+}
+
+.third-mbps-menu .landline-container img {
+    position: relative;
+    width: 50%;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.third-mbps-menu .plan-description {
+    font-size: 80%;
+}
+
+.third-mbps-menu .apply-btn {
+    position: absolute;
+    margin: 1rem 0 1rem 7rem;
+    width: 6rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    background-color: #DD9F3A;
+    border-radius: 18px;
+    text-align: center;
+}
+
+
 
 /* <------ third-Section ------> */
 
@@ -165,23 +345,62 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
-    .button {
-        margin-left: 15rem;
-        
+@media screen and (max-width: 414px) and (max-height: 896px) {
+
+    /* <------ Nav-Bar ------> */
+    .logo img {
+        width: 70%;
+    }
+
+
+    /* <------ First Section ------> */
+
+    #first-section {
+        height: 130vh;
+    }
+
+    .image-family-wrapper {
+        width: 90%;
+        position: absolute;
+        margin: 36rem 23.3rem 0 -0.5rem;
     }
 
     .slogan-container {
         margin: 3rem 1rem;
     }
 
-    #first-section {
-        height: 180vh;
+    .button {
+        margin-left: 10rem;
+        padding: 1rem 4rem ;
     }
 
-    .image-family-wrapper {
-        width: 90%;
-        position: absolute;
-        margin: 35rem 23.3rem 0 0;
+    /* <------ Second-Section ------> */
+
+    #second-section {
+        height: 250vh;
     }
+
+    .mbps-menu {
+        margin-left: -2rem;
+    }
+
+    .second-mbps-menu {
+        margin: 3.5rem 60rem 0 0rem;
+    }
+
+    .third-mbps-menu {
+        margin: 3.5rem 60rem 0 0rem;
+    }
+
+    .services-menu h1 {
+        font-size: 300%;
+    }
+    
+    
+
+    
+
+    
+
+    
 }
