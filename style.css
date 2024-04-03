@@ -35,6 +35,39 @@ nav ul li a {
     padding: 5px 0 0 50px;
 }
 
+.logo img {
+    width: 70%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: #DD9F3A;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-img {
+        margin-left: 20px;
+        display: block;
+        cursor: pointer;
+    }
+}
 
 /* <------ First-Section ------> */
 
@@ -309,12 +342,13 @@ nav ul li a {
 #fourth-section .col-3 {
     text-align: center;
     padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.6);
     cursor: pointer;
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
     transition: 0.5s;
+    
 }
 
 #fourth-section .col-3:hover{
@@ -336,6 +370,7 @@ nav ul li a {
     font-weight: 600;
     color: #fff;
     font-size: 20px;
+    margin-top: 1rem;
 }
 
 #fourth-section .col-3 img {
@@ -344,6 +379,8 @@ nav ul li a {
     border-radius: 10%;
     width: 100%;
 }
+
+/* <------ Footer ------> */
 
 .footer {
     /* width: 100%;
@@ -376,6 +413,7 @@ nav ul li a {
 .footer-col-2 img {
     width: 180px;
     margin-bottom: 20px;
+    border-radius: 12px;
 }
 .footer-col-3,
 .footer-col-4 {
@@ -392,6 +430,11 @@ ul {
 .footer-col-3 {
     min-width: 250px;
     margin-bottom: 20px;
+}
+
+.footer-col-1 a {
+    text-decoration: none;
+    color: #8a8a8a;
 }
 
 

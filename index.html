@@ -17,7 +17,7 @@
                 <img src="images/GISP.png" alt="GISP Logo">
             </div>
             <nav>
-                <ul>
+                <ul id="menuItems">
                     <li><a href="#first-section">Home</a></li>
                     <li><a href="#second-section">Services</a></li>
                     <li><a href="#third-section">About</a></li>
@@ -26,6 +26,7 @@
                     <li><a href="#">Apply</a></li>
                 </ul>
             </nav>
+            <img src="images/menu.png" alt="Menu Image" class="menu-img" width="50px" onclick="onClickMenu()">
         </div>
     </header>
 
@@ -167,7 +168,7 @@
             <div class="row">
                 <div class="footer-col-1">
                     <h3>Visit Our Websit</h3>
-                    <p>https://notmhyk.github.io/WEB-MIDTERMS-HTML-CSS/</p>
+                    <a href="https://notmhyk.github.io/WEB-MIDTERMS-HTML-CSS/">https://notmhyk.github.io/WEB-MIDTERMS-HTML-CSS/</a>
                 </div>
                 <div class="footer-col-2">
                     <img src="images/GISP.png" alt="GISP Logo">
@@ -194,5 +195,19 @@
         </div>
 
     </footer>
+
+    <script>
+        let menuItems = document.getElementById('menuItems')
+
+        menuItems.style.maxHeight = "0px";
+
+        function onClickMenu() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
