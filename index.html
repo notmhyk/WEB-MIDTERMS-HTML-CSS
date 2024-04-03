@@ -22,8 +22,8 @@
                     <li><a href="#second-section">Services</a></li>
                     <li><a href="#third-section">About</a></li>
                     <li><a href="#fourth-section">Review</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Apply</a></li>
+                    <li><a href="second-page.html#faqs">FAQs</a></li>
+                    <li><a href="second-page.html#apply">Apply</a></li>
                 </ul>
             </nav>
             <img src="images/menu.png" alt="Menu Image" class="menu-img" width="50px" onclick="onClickMenu()">
@@ -144,7 +144,7 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <img src="images/person3.jpg" alt="Person 1">
-                    <h3>Maila wit</h3>
+                    <h3>Maila Whit</h3>
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
@@ -193,21 +193,7 @@
                 </div>
             </div>
         </div>
-
     </footer>
-
-    <script>
-        let menuItems = document.getElementById('menuItems')
-
-        menuItems.style.maxHeight = "0px";
-
-        function onClickMenu() {
-            if (menuItems.style.maxHeight == "0px") {
-                menuItems.style.maxHeight = "200px";
-            } else {
-                menuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
+    <script src="func.js"></script>
 </body>
 </html>
