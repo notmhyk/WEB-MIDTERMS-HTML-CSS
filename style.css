@@ -505,7 +505,14 @@ ul {
     .logo img {
         width: 70%;
     }
+    
+    .logo {
+        padding: 5px 0 0 20px;
+    }
 
+    .menu-img {
+        margin-right: 20px;
+    }
 
     /* <------ First Section ------> */
 
@@ -555,5 +562,11 @@ ul {
         height: auto;
         margin-top: -7rem;
         margin-bottom: 5rem;
+    }
+
+
+    /* <------ FAQs-Section ------> */
+    .faqs-menu {
+        margin-left: 0rem;
     }
 }
