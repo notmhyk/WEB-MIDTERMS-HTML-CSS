@@ -446,14 +446,23 @@ ul {
     padding: 2rem 2rem 2rem 0; 
 }
 
-#faqs .mbps-menu .first-mbps-menu img,
-#faqs .mbps-menu .second-mbps-menu img,
-#faqs .mbps-menu .third-mbps-menu img {
+.faqs-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+#faqs .faqs-menu .first-mbps-menu img,
+#faqs .faqs-menu .second-mbps-menu img,
+#faqs .faqs-menu .third-mbps-menu img {
     width: 50px;
     margin-top: 20px;
     border-radius: 10%;
     width: 20rem;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 }
 
 #faqs .mbps-menu .first-mbps-menu h3,
