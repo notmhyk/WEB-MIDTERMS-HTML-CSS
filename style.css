@@ -488,10 +488,91 @@ ul {
 
 #apply {
     width: 100%;
-    height: 100vh;
     background-color: #fff;
     padding: 2rem 2rem 0rem 0; 
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+.description-container,
+.apply-container {
+    flex-basis: calc(50% - 2rem); 
+    padding: 1rem 0rem 5rem 1rem;
+    border-radius: 12px;
+    margin: 5rem 0 0rem; 
+    background-color: #fff;
+    /* border: solid; */
+}
+.description-container {
+    text-align: left;
+}
+
+.description-container h1 {
+    font-size: 300%;
+    width: 29rem;
+}
+
+.description-container h3 {
+    margin-top: 3rem;
+    font-size: 150%;
+    width: 29rem;
+    color: #DD9F3A;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    max-width: 1200px;
+    flex-direction: column;
+    border: solid;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 60px;
+    
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 250%;
+}
+
+.fname,
+.lname,
+.email {
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    font-size: 90%;
+}
+
+.contact-btn {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #DD9F3A;
+    color: #fff;
+}
+
+
+
 
 
 @media screen and (max-width: 414px) {
@@ -522,11 +603,11 @@ ul {
     }
 
     .slogan-container {
-        margin: 3rem 1rem;
+        margin: 3rem -2rem;
     }
 
     .button {
-        margin-left: 6rem;
+        margin-left: -1rem;
         padding: 1rem 4rem ;
     }
 
@@ -563,5 +644,18 @@ ul {
     /* <------ FAQs-Section ------> */
     .faqs-menu {
         margin-left: 0rem;
+    }
+
+    /* <------ Apply-Section ------> */
+    .description-container,
+    .apply-container {
+    padding: 1rem 1rem 5rem 2rem;
+    }
+
+    .description-container h1 {
+        width: 20rem;
+    }
+    .description-container h3 {
+        width: 20rem;
     }
 }
